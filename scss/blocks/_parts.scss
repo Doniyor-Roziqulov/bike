@@ -1,0 +1,120 @@
+.parts {
+    padding-top: 27px;
+    padding-bottom: 48px;
+}
+
+.parts-bold {
+    display: block;
+    color: var(--bl, #101010);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 28.8px */
+    letter-spacing: 0.18px;
+    margin-bottom: 16px;
+}
+
+.parts-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.parts-text {
+    display: block;
+    color: var(--bl, #101010);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 25.6px */
+    margin-top: 0;
+    margin-bottom: 0;
+    text-decoration-line: none;
+}
+
+.parts-link {
+    color: var(--bl, #101010);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 25.6px */
+    text-decoration-line: none;
+}
+
+.parts-tabletext {
+    color: var(--2-grey, #777);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 25.6px */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.parts-tabletwo {
+    color: var(--bl, #101010);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 25.6px */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.parts-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.table-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.table-big {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+@media only screen and (min-width: 700px) {
+    .table-box {
+        flex-direction: row;
+        column-gap: 20px;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 980px) {
+    .parts-box {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .table-box {
+        column-gap: 30px;
+    }
+
+    .parts {
+        padding-top: 40px;
+        padding-bottom: 160px;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .table-box {
+        column-gap: 50px;
+    }
+}
+
+@media only screen and (min-width: 1150px) {
+    .table-box {
+        column-gap: 101px;
+    }
+}

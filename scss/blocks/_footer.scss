@@ -1,0 +1,140 @@
+.site-footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #101010;
+}
+
+.footer-big {
+    padding-bottom: 40px;
+}
+
+.footer-text {
+    color: var(--light-grey, #b3b3b3);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 25.6px */
+    margin-top: 31px;
+    margin-bottom: 32px;
+}
+
+.footer-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-bold {
+    display: none;
+    color: var(--white, #fff);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 38.4px */
+    letter-spacing: 0.24px;
+    margin-bottom: 32px;
+}
+
+.footer-box {
+    display: none;
+}
+
+.footer-link {
+    display: block;
+    color: var(--white, #fff);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 25.6px */
+    text-decoration-line: none;
+}
+
+.footer-link:hover {
+    color: #f57520;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.footer-item {
+    position: relative;
+    padding-left: 48px;
+}
+
+.footer-item:first-child::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url(../../images/smartphone.svg);
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.footer-item:nth-child(2)::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url(../../images/navigation.svg);
+    position: absolute;
+    left: 0;
+}
+
+.footer-item:last-child::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url(../../images/mail.svg);
+    position: absolute;
+    left: 0;
+}
+
+.footer-end {
+    padding-top: 16px;
+    border-top: 1px solid #777777;
+}
+
+.footer-span {
+    color: var(--2-grey, #777);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 19.2px */
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 650px) {
+    .footer-big {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-logobox {
+        width: 285px;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .footer-big {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .footer-big {
+        justify-content: space-between;
+    }
+
+    .footer-box {
+        display: block;
+    }
+
+    .footer-bold {
+        display: block;
+    }
+}

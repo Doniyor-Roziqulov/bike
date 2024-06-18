@@ -1,0 +1,106 @@
+.news {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: var(--banner, #131313);
+}
+
+.news-title {
+    color: var(--white, #fff);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 105%; /* 52.5px */
+    letter-spacing: 2.5px;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.news-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.news-email {
+    color: var(--light-grey, #b3b3b3);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+    border: none;
+    border-radius: 5px;
+    background-color: var(--white, #fff);
+    padding: 10px 16px;
+}
+
+.news-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.news-btn {
+    color: var(--white, #fff);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 123%; /* 19.68px */
+    border: none;
+    border-radius: 5px;
+    background-color: var(--orange, #f57520);
+    padding: 16px 80px;
+}
+
+.news-chek {
+    width: 24px;
+    height: 24px;
+}
+
+.news-text {
+    color: var(--white, #fff);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 19.2px */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.new-twobox {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+@media only screen and (min-width: 600px) {
+    .news-box {
+        flex-direction: row;
+        column-gap: 16px;
+    }
+
+    .news-email {
+        width: 346px;
+    }
+
+    .news-btn {
+        width: 180px;
+        padding-left: 37px;
+        padding-right: 37px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .news {
+      background-image: url(../../images/pic.png);
+      background-repeat: no-repeat;
+      background-position: top right;
+    }
+    .news-title {
+        margin-bottom: 32px;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 123%; /* 78.72px */
+        letter-spacing: 3.2px;
+    }
+}
